@@ -1,7 +1,7 @@
 /* Reset font styles */
 body, h1, h2, h3, h4, h5, h6, p {
-    margin: 1;
-    padding: 1;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
 }
 
@@ -17,7 +17,6 @@ body {
     margin: 0 auto;
     padding: 15px;
 }
-
 
 h1 {
     font-size: 36px;
@@ -46,12 +45,14 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Navigation bar styles */
+/* Navigation bar */
 nav {
-    height: 30px;
-    padding: 5px 5px;
+    height: 10%;
+    margin: 5px 0 0 0;
+    padding: 0 5px;
     background-color: #fff;
-    color: #343a40;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
     display: flex;
 }
 
@@ -71,7 +72,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #343a40;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
@@ -81,29 +82,61 @@ nav ul li a:hover {
     color: #007bff;
 }
 
-/* Main content styles */
-main {
-    padding: 20px;
+/* Main content */
+main {   
+    display: flex;   
 }
 
-/* Styles for the side navigation bar */
-
-/* Barra lateral */
-aside {
-    display: flex;
-    width: 250px;
-    position: right;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px;
-    margin: 30px 0;
-    z-index: auto;
-    overflow-y: auto;
+/* Sections */
+section {
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
     border-radius: 5px;
+    flex: 4;
+}
+
+/* Projects */
+#projects {
+    margin-top: 1%;
+    padding: 1%;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+}
+
+.project {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;    
+    background-color: #f8f9fa;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+
+}
+
+.project h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Aside bar */
+aside {
     flex: 1;
+    margin: 1% 0 0 1%;
+    padding: 1%;    
+    width: 25%;
+    height: 100%;
+    padding: 20px;    
+    background-color: #343a40;
+    color: #fff;   
+    border-radius: 5px;
 }
 
 aside h2 {
@@ -133,73 +166,16 @@ aside a:hover {
     color: #007bff;
 }
 
-/* Styles for the main content */
-main {
-    display: flex;
-    margin-left: 10px;
-    padding: 20px;
-}
-
-/* Secciones */
-section {
-    margin: 30px 0;
-    padding: 15px;
-    background-color: #fff;
-    border: 1px solid #e3e3e3;
-    border-radius: 5px;
-}
-
-/* Estilos de la sección de proyectos */
-#proyectos {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #e3e3e3;
-    border-radius: 5px;
-}
-
-.proyecto {
-    background-color: #f8f9fa;
-    border: 1px solid #e3e3e3;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 15px;
-}
-
-.proyecto h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.proyecto p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Pie de página */
+/* Footer */
 footer {
     background-color: #343a40;
     color: #fff;
     text-align: center;
+    margin: 1% 0;  
     padding: 15px 0;
 }
 
-/* Estilos de la sección de contacto */
-#contacto {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #e3e3e3;
-    border-radius: 5px;
-}
-
-#contacto a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-/* Estilos de enlaces */
+/* Links */
 a {
     color: #007bff;
     text-decoration: none;
