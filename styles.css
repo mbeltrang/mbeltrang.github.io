@@ -1,11 +1,11 @@
-/* Reset de estilos y fuentes */
+/* Reset font styles */
 body, h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-    padding: 0;
+    margin: 1;
+    padding: 1;
     font-family: Arial, sans-serif;
 }
 
-/* Estilos de fondo y tipografía */
+/* Background and typography */
 body {
     background-color: #f8f9fa;
     color: #333;
@@ -17,6 +17,7 @@ body {
     margin: 0 auto;
     padding: 15px;
 }
+
 
 h1 {
     font-size: 36px;
@@ -33,7 +34,7 @@ h3 {
     font-weight: 600;
 }
 
-/* Estilos del encabezado */
+/* header layout  */
 header {
     text-align: center;
     background-color: #343a40;
@@ -45,9 +46,19 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Estilos de la barra de navegación */
+/* Navigation bar styles */
+nav {
+    height: 30px;
+    padding: 5px 5px;
+    background-color: #fff;
+    color: #343a40;
+    display: flex;
+}
+
 nav ul {
     list-style: none;
+    padding: 0;
+    text-align: right;
 }
 
 nav ul li {
@@ -55,15 +66,78 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
+nav ul li:last-child {
+    margin-right: 0;
 }
 
-/* Contenido principal */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Main content styles */
 main {
-    padding: 20px 0;
+    padding: 20px;
+}
+
+/* Styles for the side navigation bar */
+
+/* Barra lateral */
+aside {
+    display: flex;
+    width: 250px;
+    position: right;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    margin: 30px 0;
+    z-index: auto;
+    overflow-y: auto;
+    border-radius: 5px;
+    flex: 1;
+}
+
+aside h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    transition: color 0.3s;
+}
+
+aside a:hover {
+    color: #007bff;
+}
+
+/* Styles for the main content */
+main {
+    display: flex;
+    margin-left: 10px;
+    padding: 20px;
 }
 
 /* Secciones */
@@ -101,15 +175,6 @@ section {
 .proyecto p {
     font-size: 16px;
     line-height: 1.5;
-}
-
-/* Barra lateral */
-aside {
-    background-color: #f8f9fa;
-    padding: 15px;
-    border: 1px solid #e3e3e3;
-    border-radius: 5px;
-    margin: 30px 0;
 }
 
 /* Pie de página */
